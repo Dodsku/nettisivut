@@ -1,0 +1,286 @@
+:root {
+  // Typo
+  --main-font: 'Poppins', sans-serif;
+  // Sizes
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-base: 15px;
+  --text-md: 16px;
+  --text-lg: 19px;
+  --text-xl: 21px;
+  // Colors
+  --main-color: #274961;
+  --sub-color: #6d7d9a;
+  --secondary-color: #c51e3a;
+  --success-color: #1fbda5;
+}
+
+/* General Puposes */
+// Fonts
+$m-f: "Poppins",
+sans-serif;
+$s-f: "Open Sans",
+sans-serif;
+$t-f: "Karla",
+sans-serif;
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?gm7fsa");
+  src: url("../fonts/icomoon.eot?gm7fsa#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?gm7fsa") format("truetype"),
+    url("../fonts/icomoon.woff?gm7fsa") format("woff"),
+    url("../fonts/icomoon.svg?gm7fsa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-icon-"],
+[class*=" ico-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-icon-search:before {
+  content: "\e900";
+}
+
+.ico-icon-user:before {
+  content: "\e901";
+}
+
+.ico-icon-cart:before {
+  content: "\e902";
+}
+
+// Colors
+$m-c: #122d3e;
+$s-c: #274961;
+$t-c: #656d78;
+$bg-c: #122d3e;
+
+@mixin g-c($m-c, $s-c) {
+  background: $m-c;
+  /* Old browsers */
+  background: -moz-linear-gradient(-90deg, $m-c 0%, $s-c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear,
+      left left,
+      left right,
+      color-sleft(0%, $m-c),
+      color-sleft(100%, $s-c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-90deg, $m-c 0%, $s-c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-90deg, $m-c 0%, $s-c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-90deg, $m-c 0%, $s-c 100%);
+  /* IE10+ */
+  background: linear-gradient(-90deg, $m-c 0%, $s-c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#122d3e', endColorstr='#274961', GradientType=0);
+  /* IE6-9 */
+}
+
+// Elements
+blockquote {
+  font-family: $m-f;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: #f3f5f9;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+cite {
+  color: $s-c;
+}
+
+table {
+  border: 1px solid #e7e7e7;
+  margin: 20px 0;
+  width: 100%;
+}
+
+pre {
+  background: #fff url("../img/code.png") repeat top;
+  background-size: 1px 40px;
+  border: 1px solid #e7e7e7;
+  padding: 1.6em;
+  line-height: 21px;
+  margin: 20px 0;
+  white-space: pre-wrap;
+}
+
+table th {
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  background: #f8f8f8;
+  font-family: $m-f;
+  font-weight: 600;
+  color: #606f8a;
+
+  a {
+    font-size: 14px;
+  }
+}
+
+table td {
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  background: #fff;
+  font-family: Karla, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7d9a;
+
+  a {
+    font-size: 14px;
+  }
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+  background: #fff;
+  border: 2px solid #f4f6fa;
+  padding: 6px;
+  font-family: $m-f;
+  font-size: 13px;
+  color: #6a7487;
+  border-radius: 2px;
+  width: 100%;
+
+  &::placeholder {
+    color: #6a7487;
+  }
+}
+
+input[type="submit"] {
+  background: $s-c;
+  font-family: $m-f;
+  font-size: 13px;
+  color: #fff;
+  border: 0;
+  padding: 8px 30px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #001a35;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $m-f;
+  font-weight: 700;
+  color: #333;
+  word-break: break-word;
+  -ms-word-break: break-word;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #72afd3;
+}
+
+::selection {
+  color: #fff;
+  background: #72afd3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Body */
+body {
+  background: #ffffff;
+}
+
+button:focus,
+input:focus,
+textarea {
+  outline: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+
+p {
+  font-family: $m-f;
+  font-size: 13px;
+  line-height: 26px;
+  color: #6d7d9a;
+  font-weight: 400;
+}
+
+a {
+  color: #204056;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+code,
+cite,
+dd {
+  color: #6d7d9a;
+}
+
+dd {
+  a {
+    color: #6d7d9a;
+    font-family: Karla, sans-serif;
+    font-size: 13px;
+  }
+}
+
+dt {
+  color: #6d7d9a;
+  font-family: Karla, sans-serif;
+  font-size: 15px;
+}

@@ -1,0 +1,27 @@
+<wpml-config>
+  <admin-texts>
+    <key name="phox">
+      <key name="logo"/>
+      <key name="retinal-logo"/>
+      <key name="text-logo"/>
+      <key name="info-email"/>
+      <key name="info-phone"/>
+      <key name="topbar-login-url"/>
+      <key name="topbar-cart-url"/>
+      <key name="blog-page-title"/>
+      <key name="blog-page-description"/>
+      <key name="page404-main-text"/>
+      <key name="page404-desc-text"/>
+      <key name="comingsoon-text"/>
+      <key name="comingsoon-description"/>
+    </key>
+  </admin-texts>
+  <custom-fields>
+    <custom-field action="copy-once">_elementor_template_type</custom-field>
+    <custom-field action="copy-once">_elementor_edit_mode</custom-field>
+    <custom-field action="copy-once">_elementor_data</custom-field>
+    <custom-field action="copy-once">_elementor_version</custom-field>
+    <custom-field action="copy-once">_elementor_css</custom-field>
+    <custom-field action="copy-once">_elementor_page_settings</custom-field>
+  </custom-fields>
+</wpml-config>

@@ -1,0 +1,278 @@
+/* General Pupose */
+/* WHMCS Brdige Plugin */
+div#bridge {
+  margin: 0;
+}
+
+div#bridge section#main-menu {
+  background: #122d3e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, right top, left top, from(#122d3e), to(#274961));
+  background: linear-gradient(-90deg, #122d3e 0%, #274961 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#122d3e', endColorstr='#274961', GradientType=0);
+  /* IE6-9 */
+}
+
+div#bridge section#main-menu .navbar-main {
+  border-bottom: 1px solid #143143;
+  padding: 15px 0px;
+  background: #122d3e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, right top, left top, from(#122d3e), to(#274961));
+  background: linear-gradient(-90deg, #122d3e 0%, #274961 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#122d3e', endColorstr='#274961', GradientType=0);
+  /* IE6-9 */
+  width: 100%;
+  margin-bottom: 100px;
+  border-radius: 0;
+}
+
+div#bridge section#main-menu .navbar-main .navbar-nav {
+  display: inline;
+}
+
+div#bridge section#main-menu .navbar-main .navbar-nav li a {
+  font-size: 15px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+div#bridge section#main-menu .navbar-main .navbar-nav .active > a,
+div#bridge section#main-menu .navbar-main .navbar-nav .active > a:focus,
+div#bridge section#main-menu .navbar-main .navbar-nav .active > a:hover,
+div#bridge section#main-menu .navbar-main .navbar-nav .open > a,
+div#bridge section#main-menu .navbar-main .navbar-nav .open > a:focus,
+div#bridge section#main-menu .navbar-main .navbar-nav .open > a:hover,
+div#bridge section#main-menu .navbar-main .navbar-nav li > a:focus,
+div#bridge section#main-menu .navbar-main .navbar-nav li > a:hover {
+  background-color: transparent !important;
+  color: #84c1dc !important;
+  outline: none;
+}
+
+div#bridge section#home-banner {
+  padding: 120px 0 !important;
+  background: #122d3e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, right top, left top, from(#122d3e), to(#274961));
+  background: linear-gradient(-90deg, #122d3e 0%, #274961 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#122d3e', endColorstr='#274961', GradientType=0);
+  /* IE6-9 */
+}
+
+div#bridge section#home-banner h2 {
+  padding: 0 35px 30px 25px;
+  font-weight: 600;
+}
+
+div#bridge section#home-banner .btn.search {
+  background-color: #cc2241;
+}
+
+div#bridge section#home-banner .btn.transfer {
+  background-color: #2b516b !important;
+}
+
+div#bridge .main-content {
+  margin-bottom: 150px;
+}
+
+div#bridge .dropdown-menu > li > a {
+  padding: 6px 20px;
+  font-weight: 400;
+  color: #7e7e7e;
+  font-size: 14px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+div#bridge .navbar-default .navbar-collapse,
+div#bridge .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+div#bridge section#header {
+  display: none;
+}
+
+div#bridge .lead {
+  color: #fff;
+}
+
+div#bridge .row {
+  display: block;
+}
+
+div#bridge .home-shortcuts {
+  background: #c51e39;
+  padding: 15px 0;
+}
+
+div#bridge .home-shortcuts li {
+  border-right: 1px solid #b62c46;
+}
+
+div#bridge .home-shortcuts li a {
+  color: #fff;
+}
+
+div#bridge .home-shortcuts li a p {
+  color: #fff;
+}
+
+div#bridge .home-shortcuts li:first-child {
+  border-left: 1px solid #b62c46;
+}
+
+div#bridge .domainchecker-homepage-captcha {
+  margin: 20px auto;
+}
+
+div#bridge .btn-primary {
+  background-color: #c51e39;
+  border-color: #c51e39;
+}
+
+div#bridge .announcement-single {
+  margin: 0 0 25px 0;
+  background: #f8f8f8;
+  padding: 20px;
+}
+
+div#bridge .checkbox input[type="checkbox"],
+div#bridge .checkbox-inline input[type="checkbox"],
+div#bridge .radio input[type="radio"],
+div#bridge .radio-inline input[type="radio"] {
+  margin-top: 4px;
+}
+
+div#bridge section#main-body {
+  margin: 0;
+  padding: 150px 0 20px;
+}
+
+div#bridge section#footer {
+  display: none;
+}
+
+div#bridge section#main-body {
+  padding: 75px 0 0 !important;
+}
+
+div#bridge div#twitterFeedOutput {
+  background: #fafafa;
+  padding: 30px;
+  border-left: 4px solid #cc2241;
+  margin: 40px 0;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+div#bridge div#twitterFeedOutput a {
+  font-size: 15px;
+}
+
+div#bridge .panel-sidebar a.list-group-item.active,
+div#bridge .panel-sidebar a.list-group-item.active:focus,
+div#bridge .panel-sidebar a.list-group-item.active:hover {
+  background-color: #c51e39 !important;
+  border-color: #c51e39 !important;
+  color: #fff !important;
+}
+
+div#bridge .panel-sidebar .panel-heading {
+  color: #fff !important;
+  background-color: #2c526b !important;
+}
+
+div#bridge .panel-sidebar .panel-title {
+  font-family: "Karla", sans-serif !important;
+  font-size: 15px !important;
+  color: #fff !important;
+}
+
+div#bridge .panel-sidebar .panel-minimise {
+  color: #fff !important;
+}
+
+div#bridge a.list-group-item,
+div#bridge button.list-group-item {
+  color: #7989a4;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+div#bridge div.header-lined h1 {
+  padding: 0 !important;
+  border-bottom: 1px solid #e7e7e7 !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  color: #325c76 !important;
+}
+
+div#bridge div.header-lined .breadcrumb {
+  font-size: 15px !important;
+  color: #c51e39 !important;
+  border-radius: 4px !important;
+  background: #fafafa !important;
+  margin-top: 5px !important;
+  padding: 15px !important;
+  font-family: "Karla", sans-serif !important;
+}
+
+div#bridge div.header-lined .breadcrumb li a {
+  color: #294e67 !important;
+  font-family: "Karla", sans-serif !important;
+  font-size: 15px;
+}
+
+div#bridge div.header-lined small {
+  font-size: 16px;
+  color: #7888a4;
+}
+
+div#bridge form#frmGeneratePassword {
+  z-index: 999999999;
+  position: relative;
+}
+
+div#bridge .modal-header {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  div#bridge .home-shortcuts li {
+    border-bottom: 1px solid #b62c46;
+  }
+  div#bridge .navbar-main .navbar-toggle {
+    margin: 0;
+  }
+  div#bridge section#main-menu .navbar-main .navbar-nav {
+    display: block !important;
+    position: relative;
+    z-index: 9999999;
+  }
+}
+
+#bridge #order-standard_cart .input-group-lg > .form-control {
+  color: #7e7e7e !important;
+}
+/*# sourceMappingURL=bridge.css.map */

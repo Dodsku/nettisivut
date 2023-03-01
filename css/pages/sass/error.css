@@ -1,0 +1,56 @@
+.error-p {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 180px 0;
+}
+
+.error-p .title-error h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  margin: 0 0 30px 0;
+}
+
+.error-p .title-error p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  line-height: 35px;
+}
+
+.error-p #wdes-fullscreen-searchform {
+  margin-top: 40px;
+  top: 0 !important;
+}
+
+.error-p #wdes-fullscreen-searchform input#wdes-fullscreen-search-input {
+  width: 40%;
+  padding: 12px 15px;
+  font-size: 16px;
+}
+
+.error-p #wdes-fullscreen-searchform button[type="submit"] {
+  padding: 14px 20px;
+  cursor: pointer;
+  border: 0;
+  background: #204056;
+  border-radius: 2px;
+  position: relative;
+  top: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  right: initial;
+}
+
+.error-p #wdes-fullscreen-searchform button[type="submit"]:hover, .error-p #wdes-fullscreen-searchform button[type="submit"]:focus {
+  outline: none;
+  background: #333;
+}
+
+.error-p #wdes-fullscreen-searchform i.fullscreen-search-icon:before {
+  color: #fff;
+  font-size: 20px;
+}
+/*# sourceMappingURL=error.css.map */

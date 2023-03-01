@@ -1,0 +1,578 @@
+/* Footer */
+
+.widgets_footer_area {
+  margin: 80px 0 30px;
+}
+
+footer {
+  background: #fff; // Call To Action
+
+  .widget-call-to-action-button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+  }
+
+  // Wdes Posts
+  .wdes-posts-sec {
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    .posts {
+      margin: 0;
+
+      a {
+        width: 100%;
+        color: #fff !important;
+      }
+
+      span {
+        color: #b3b3b3 !important;
+      }
+    }
+
+    .posts li img {
+      height: 51px;
+      object-fit: cover;
+    }
+  }
+}
+
+.company-info-block img {
+  width: 21px;
+  float: left;
+}
+
+.padd-ft {
+  padding: 30px 0;
+}
+
+.footer-dark {
+  @include g-c(#122d3e, #274961);
+}
+
+.footer-white {
+  background: #f8f8f8;
+
+  .about p,
+  .company-info-block span,
+  .company-info-block a {
+    color: #7e7e7e !important;
+  }
+
+  .widget_archive a:before,
+  .widget_categories a:before {
+    color: #7e7e7e !important;
+  }
+
+  .widget-footer input[type="text"],
+  .widget-footer input[type="password"],
+  .widget-footer input[type="email"],
+  .widget-footer input[type="url"],
+  .widget-footer input[type="date"],
+  .widget-footer input[type="number"],
+  .widget-footer input[type="tel"],
+  .widget-footer input[type="file"],
+  .widget-footer textarea,
+  .widget-footer select {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    color: #7e7e7e;
+  }
+
+  .widget-footer.widget_rss cite {
+    color: $s-c;
+  }
+
+  .email-news {
+    background: #fff !important;
+    border: 1px solid #e7e7e7 !important;
+    color: #7e7e7e;
+
+    &::placeholder {
+      color: #7e7e7e;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .widget_wdes_newsletter h2 {
+    color: #333 !important;
+  }
+
+  .widget_archive ul li {
+    color: #7e7e7e !important;
+  }
+
+  ul li a,
+  .sc-links-ft a {
+    color: #7e7e7e !important;
+  }
+
+  .widget-footer #wp-calendar thead th {
+    background: #f8f8f8;
+    color: #7e7e7e;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .widget-footer #wp-calendar tbody td {
+    border: 1px solid #e7e7e7;
+    color: #7e7e7e;
+  }
+
+  .widget-footer #wp-calendar thead,
+  .widget-footer table th,
+  .widget-footer #wp-calendar tfoot td {
+    border: 1px solid #e7e7e7;
+  }
+
+  .widget-footer table td {
+    background: #f8f8f8;
+  }
+
+  .widget-footer #wp-calendar tbody td a {
+    color: #333;
+  }
+
+  li,
+  p {
+    color: #7e7e7e !important;
+  }
+
+  .widget-footer #wdes-fullscreen-search-input {
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    color: #7e7e7e;
+
+    &::placeholder {
+      color: #7e7e7e;
+    }
+  }
+
+  .sc-links-ft a:hover {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .copyrights-wdes-ft {
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .widget-footer a.tag-cloud-link {
+    color: #7e7e7e;
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.widget-footer.widget_search {
+  button[type="submit"] {
+    position: static !important;
+    width: 18%;
+    background: #132a39 !important;
+    padding: 11px !important;
+  }
+}
+
+.copyrights-wdes-ft {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.copyrights-wdes-ft p {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  float: left;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.sc-links-ft {
+  float: right;
+}
+
+.sc-links-ft a {
+  font-family: $m-f;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $m-c;
+    border-bottom: 1px solid $m-c;
+  }
+}
+
+.footer {
+  float: left;
+  width: 100%;
+
+  p {
+    color: #fff;
+  }
+
+  .block-sidebar-function {
+    .wid-title {
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .func-hr2 {
+    margin: 19px 0 0;
+  }
+
+  .wid-title {
+    margin-bottom: 26px;
+  }
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.widget_wdes_newsletter h2 {
+  margin: 10px 0 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 21px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer li {
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.footer ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: $t-f;
+  text-decoration: none;
+  transition: all 0.3s;
+  word-break: break-all;
+}
+
+.footer ul li a:hover {
+  color: $m-c;
+}
+
+.footer .widget_wdes_newsletter {
+  margin: 0 0 50px;
+
+  p {
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  .wid-title h2 {
+    letter-spacing: 0.5px;
+  }
+}
+
+.footer {
+
+  .widget_nav_menu,
+  .widget_nav_menu {
+    li {
+      margin: 10px 0 0 0;
+      padding: 0 0 0 10px;
+
+      &:first-child {
+        padding: 0;
+      }
+    }
+
+    .sub-menu {
+      li {
+        &:first-child {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .widget_archive ul li {
+    color: #e7e7e7;
+  }
+
+  .widget_archive,
+  .widget_categories {
+    a {
+      float: left;
+    }
+  }
+}
+
+.footer {
+  .rssSummary {
+    font-size: 12px;
+    margin: 5px 0 1px;
+    line-height: 25px;
+  }
+
+  .widget_text {
+    p {
+      line-height: 27px;
+      font-size: 12px;
+    }
+  }
+}
+
+.footer-dark {
+  #wp-calendar tfoot td a {
+    color: #fff;
+  }
+}
+
+.footer.footer-dark {
+  a.rsswidget {
+    color: #fff;
+  }
+}
+
+// Startup Footer Widget
+.footer {
+
+  // Social Media
+  .startup-social-widgets {
+    border: 0;
+    padding: 0;
+    margin: 0 0 50px 0;
+
+    .wid-title h2 {
+      font-size: 18px;
+    }
+
+    .socialmedia-icons li {
+      margin-right: 11px;
+
+      a {
+        width: initial;
+        border: initial;
+        padding: initial !important;
+        font-size: 19px !important;
+        color: #717380 !important;
+        font-family: "Font Awesome 5 Brands" !important;
+      }
+    }
+  }
+
+  .startup-wdes-about {
+    margin: 0 0 50px;
+
+    .logo-footer {
+      max-height: 30px;
+    }
+
+    .company-info-block {
+      &:first-child {
+        span {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          &::before {
+            content: "\f0e0";
+            font-family: "Font Awesome 5 Free";
+            float: left;
+            font-size: 15px;
+          }
+
+          span {
+            margin-left: 3%;
+            margin-top: -1.2px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        span {
+          margin-left: 0;
+          margin-top: -1.2px;
+
+          &::before {
+            content: "\f1d8";
+            font-family: "Font Awesome 5 Free";
+            float: left;
+            font-size: 15px;
+            margin-right: 3%;
+          }
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer {
+  .footer-menu {
+    li {
+      float: left;
+      margin: 0 15px 0 0;
+
+      a {
+        margin-left: 0;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: montserrat, sans-serif;
+
+        &:hover {
+          border-bottom: 0;
+        }
+
+        &:hover .wdes-menu-icon {
+          color: inherit !important;
+        }
+
+        .wdes-menu-icon {
+          font-size: 15px;
+          margin-top: 5px;
+        }
+
+        .wdes-menu-align-left {
+          margin-right: 5px;
+          float: left;
+        }
+
+        .wdes-menu-align-right,
+        .wdes-menu-align-auto {
+          margin-left: 5px;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
+.footer {
+  .wdes-socialmedia-widget {
+    margin: 0 0 50px;
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+
+    .socialmedia-icons li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: inherit !important;
+        font-size: 17px !important;
+        font-family: "Font Awesome 5 Brands";
+        padding: 0 !important;
+
+        border: initial;
+        width: initial;
+        border-radius: initial;
+      }
+    }
+  }
+
+  .wdes-about-widget {
+    margin: 0 0 50px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .widget_wdes_newsletter {
+    input[type="email"]::placeholder {
+      color: #d5d9e5;
+    }
+  }
+}
+
+// Footer Widgets Improvements
+.footer {
+
+  // Categories
+  .widget_categories ul a:before {
+    color: inherit;
+  }
+
+  // Ads
+  .wdes-ads-block {
+    margin-bottom: 50px;
+    padding: 0;
+    border: 0;
+
+    .wid-title {
+      display: none;
+    }
+  }
+
+  // Recent Posts
+  .wdes-posts-sec {
+    margin-bottom: 50px;
+
+    .posts li .content-post-sc {
+      width: 62%;
+      float: left;
+
+      span {
+        color: #fff !important;
+      }
+    }
+  }
+
+  // Call To Action
+  .widget-call-to-action-button {
+    margin-bottom: 50px;
+
+    h6 {
+      font-family: "Karla";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    a.job-modernlyo {
+      margin-top: 20px;
+    }
+  }
+}
+
+footer .wdes-posts-sec .posts a {
+  &:hover {
+    color: inherit !important;
+  }
+}

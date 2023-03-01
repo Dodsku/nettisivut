@@ -1,0 +1,46 @@
+#wdes-back-to-top {
+  display: inline-block;
+  background-color: #274961;
+  border: 1px solid #274961;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 45px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #cc2241;
+    border: 1px solid #cc2241;
+  }
+
+  span {
+    color: #fff;
+    font-size: 17px;
+  }
+}
+
+#wdes-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#wdes-back-to-top.wdes-btn-align-right {
+  right: 45px;
+}
+
+#wdes-back-to-top.wdes-btn-align-left {
+  left: 45px;
+}
+
+#wdes-back-to-top.wdes-btn-align-center {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}

@@ -1,0 +1,191 @@
+/* Loading */
+
+.wdes-loading {
+  @include g-c(#122d3e, #204056);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$color: #fff;
+
+// $Mixin
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin absPosition($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+
+@mixin animation($animation...) {
+  -o-animation: $animation;
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+
+
+.loader-wdes {
+  @include size(50px);
+}
+
+// Loader Double circle
+
+.loader-double {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: $color;
+  border-bottom-color: $color;
+  @include animation(spin 1.5s linear infinite);
+
+  &:before,
+  &:after {
+    content: "";
+    @include absPosition(5px, 5px, 5px, 5px);
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: $color;
+    border-bottom-color: $color;
+    @include opacity(0.6);
+    @include animation(spinreverse 2s linear infinite);
+  }
+
+  &:before {
+    top: 13px;
+    left: 13px;
+    bottom: 13px;
+    right: 13px;
+    @include animation(spinreverse 3s linear infinite);
+  }
+}
+
+//Loader Bars
+
+.loader-bars:before,
+.loader-bars:after,
+.loader-bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include size(10px, 30px);
+  background-color: $color;
+  @include animation(grow 1.5s linear infinite);
+}
+
+.loader-bars:after {
+  left: 15px;
+  @include animation(grow 1.5s linear -0.5s infinite);
+}
+
+.loader-bars span {
+  left: 30px;
+  @include animation(grow 1.5s linear -1s infinite);
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    tranform: rotate(-360deg);
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    tranform: rotate(-360deg);
+  }
+}

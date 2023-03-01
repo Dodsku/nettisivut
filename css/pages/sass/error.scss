@@ -1,0 +1,64 @@
+// Fonts
+$m-f: "Poppins",
+sans-serif;
+
+.error-p {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 180px 0;
+
+  .title-error {
+    h2 {
+      font-family: $m-f;
+      font-weight: 700;
+      font-size: 80px;
+      margin: 0 0 30px 0;
+    }
+
+    p {
+      font-family: $m-f;
+      font-size: 20px;
+      margin: 0;
+      line-height: 35px;
+    }
+  }
+
+  #wdes-fullscreen-searchform {
+    margin-top: 40px;
+    top: 0 !important;
+
+    input#wdes-fullscreen-search-input {
+      width: 40%;
+      padding: 12px 15px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      padding: 14px 20px;
+      cursor: pointer;
+      border: 0;
+      background: #204056;
+      border-radius: 2px;
+      position: relative;
+      top: 1px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      right: initial;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        background: #333;
+      }
+    }
+
+    i.fullscreen-search-icon {
+      &:before {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
